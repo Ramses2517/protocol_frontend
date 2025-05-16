@@ -1,0 +1,19 @@
+html,
+body {
+  background-color: #111312;
+  margin: 0;
+  padding: 0;
+  -ms-overflow-style: none;
+  /* Убираем полосу в IE и Edge */
+  scrollbar-width: none;
+  /* Убираем полосу в Firefox */
+  overflow: hidden;
+  height: 100%;
+}
+
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+  /* Убираем полосу в Webkit-браузерах (Chrome, Safari) */
+}

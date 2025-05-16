@@ -1,0 +1,15 @@
+services:
+  protocol-frontend-dev:
+    image: registry.gitlab.com/tg_protocol/frontend/development:latest
+    container_name: protocol-frontend-dev
+    network_mode: "host"
+    restart: always
+    init: true
+    healthcheck:
+      test: ["CMD-SHELL", "curl -Ssf http://127.0.0.1:${PORT:-3100}/ || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    env_file:
+      - .env
+    command: "yarn run serve -n -p ${PORT:-3000} build/"

@@ -1,0 +1,59 @@
+:root {
+  /* Шрифты */
+  --font-primary: 'Inter', sans-serif;
+  --font-chakra: 'Chakra Petch', sans-serif;
+  --font-dm-sans: 'DM Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  background-color: #121212;
+  color: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Скрываем полосу прокрутки для всех элементов */
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-family: inherit;
+}
+
+a {
+  color: #17E585;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #6EFFBC;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
